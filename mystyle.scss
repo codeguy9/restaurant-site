@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+$bluntYellow: #CDA45E;
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Montserrat, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+@mixin container {
+    width: 80%;
+    margin: 0;
+}
+
+.container {
+    @include container;
+    
+}
+
+header {
+    background: linear-gradient(rgba(0, 0, 0, .4),rgba(0, 0, 0, .4)), url('images/hero-bg.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}   
+
+.book:hover {
+    background: $bluntYellow;
+}
+
+.header-titles {
+    position: relative;
+    top: 40%;
+}
+
+.first-heading {
+    color: white;
+}
+
+.book1 {
+    text-decoration: none;
+    color: white;
+    padding: .7em 2em;
+    border: 1px solid $bluntYellow;
+    border-radius: 20%;
+}
+
+.book1:hover {
+    background: $bluntYellow;
+    color: white;
+    transition: all .7s;
+}
+
+.section-one {
+    background: linear-gradient(rgba(0,0,0,.8)rgba(0,0,0,.8)), url('images/about-bg.jpg');
+    height: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.img-fluid {
+    transform: scale(1.1);
+}
+.section-two {
+    background: #0B0B09;
+    position: relative;
+}
+
+small::after {
+    content:"";
+    width: 140px;
+    height: 1px;
+    background: rgb(170, 170, 170);
+    position: absolute;
+    top: 8.5em;
+    left: 34.5em;
+
+}
+@mixin after {
+    content:"";
+    width: 140px;
+    height: 1px;
+    background: rgb(170, 170, 170);
+    position: absolute;
+}
+
+.col-content {
+    background: #1A1814;
+    padding: 3em 2em;
+    width: 90%;
+ 
+    
+    
+
+    h3 {
+        color: $bluntYellow;
+        
+    }
+    h2, p {
+        color: grey
+    }
+}
+
+.col-content:hover {
+    background: $bluntYellow;
+    transform: translateY(-20px);
+    transition: all ease-in-out .8s ;
+}
+
+.section-three {
+    background: #1A1814;
+    position: relative;
+}
+
+small::after {
+    @include after;
+    top: 8.5em;
+    left: 37em
+}
+
+.tab-pane{
+    h1 {
+        color: white;
+    }
+    p {
+        color: white;
+    }
+}
+
+ul li .tab-item {
+    color: white;
+}
+
+ul li .tab-item:hover {
+    background: $bluntYellow;
+    border: none;
+}
+
+ul li .tab-item:active {
+    background: $bluntYellow;
+}
+
+.nav-tabs::after {
+    @include after;
+    width: 3px;
+    height: 200px;
+    left: 44.5em;
+    background: $bluntYellow;
+}

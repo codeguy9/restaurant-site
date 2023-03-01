@@ -1,0 +1,381 @@
+@import "reset";
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@600&display=swap');
+
+header {
+    background-image: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('./images/header-img.jpg');
+    height: 70vh;
+    max-width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+
+     .toggle-button {
+         position: absolute;
+         display: flex;
+         top: 3em;
+         left: 49%;
+         flex-direction: column;
+         justify-content: space-between;
+         width: 30px;
+         height: 21px;
+         transition: all .7s;
+     
+     
+            .bar {
+                width: 100%;
+                height: 3px;
+                background-color: white;
+                border-radius: 10px;
+            }
+     
+        }
+
+
+        img {
+            margin: auto;
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .titles {
+            width: 60%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        
+            h1 {
+                color: white;
+                font-family: Hind, sans-serif;
+                font-size: 4em;
+            }
+
+            p {
+                padding: 2em;
+                color: white;
+                font-size: 1.3em;
+
+            }
+
+        }
+
+         
+        .menu {
+            
+            flex-direction: column;
+            justify-content: flex-start;
+            height: 100%;
+            background-color: rgb(44, 44, 44);
+            width: 7em;
+             display: none;
+            transition: all .7s;
+
+
+            a {
+                color: white;
+                font-family: Hind, sans-serif;
+                font-size: 1em;
+                padding: 1em;
+                
+            }
+
+             .closebtn {
+                padding-left: 5.5em;
+            }  
+
+
+        }
+
+
+}
+
+section {
+    background: rgb(240, 240, 240);
+    padding: 10em 0;
+
+    h3 {
+        color: initial;
+
+    }
+
+    .container {
+        margin: 0 auto;
+        width: 65%;
+        
+        
+        h3 {
+            text-align: center;
+            color: initial;
+
+        }
+        h1 {
+            color: initial;
+            font-family: Hind, sans-serif;
+            font-size: 4em;
+            text-align: center;
+            padding: 1em 0;
+        }
+
+        .the-menu {
+            display: flex;
+            justify-content: space-around;
+            
+            .first-part {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 40%;
+            
+                .pear {
+                    text-align: center;
+                    padding: 2em 0;
+
+                    
+                    h2{
+                        padding-bottom: 1em;
+                    }
+                    
+                }
+                .greens {
+                    text-align: center;
+                    padding: 2em 0;
+
+                    h2 {
+                        padding-bottom: 1em;
+                    }
+                }
+                .ricotta {
+                    text-align: center;
+                    padding: 2em 0;
+
+                    h2 {
+                        padding-bottom: 1em;
+                    }
+                }
+            
+            }
+
+            .second-part {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 40%;
+
+                .brodetto {
+                    text-align: center;
+                    padding: 2em 0;
+
+                    h2 {
+                        padding-bottom: 1em;
+                    }
+                }
+                .kale {
+                    text-align: center;
+                    padding: 2em 0;
+
+                    h2 {
+                        padding-bottom: 1em;
+                    }
+                }
+                .kanestrelli {
+                    text-align: center;
+                    padding: 2em 0;
+
+                    h2 {
+                        padding-bottom: 1em;
+                    }
+                }
+            }
+        
+        }
+
+    }
+}
+
+.food {
+    background-image: url('./images/sectionfood.jpg');
+    height: 40%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+    .food-examples {
+        display:flex;
+        flex-direction: column;
+        justify-content: space-around;
+        width: 25%;
+        position: absolute;
+        right: 20%;
+        top: 20%;
+
+        
+        .food-examples-1 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding-bottom: 1em;
+
+
+            .square-food {
+                height: 150px;
+                width: 150px;
+                background: black;
+                opacity: 0.5;
+                position: relative;
+
+                span {
+                    text-transform: uppercase;
+                    font-size: .9em;
+                    color: white;
+                    position: absolute;
+                    top:60%;
+                    left: 23%;
+                    opacity: 1;
+
+                }
+
+                .fa-solid  {
+                    color: white;
+                    font-size: 2em;
+                    position: absolute;
+                    top: 26%;
+                    left: 38%;
+                }
+
+                
+            }
+        }
+    }
+
+    .food-examples-2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+            .square-food {
+                height: 150px;
+                width: 150px;
+                background: black;
+                opacity: 0.5;
+                position: relative;
+
+                span {
+                    text-transform: uppercase;
+                    font-size: .9em;
+                    color: white;
+                    position: absolute;
+                    top:60%;
+                    left: 23%;
+                    opacity: .9;
+
+                }
+
+                
+            }
+    }
+
+
+}
+
+.carousel {
+    background: white;
+    text-align: center;
+
+    .container > h1 {
+        font-size: 3em;
+        color: initial;
+        font-family: Hind, sans-serif;
+        text-align: center;
+    }
+
+    .container > p {
+        text-align: center;
+        color: initial;
+        padding-bottom: 3em;
+
+    }
+
+    .container {
+        padding: 4em 0;
+        width: 65%;
+        margin: auto;
+        text-align: center;
+        
+            .owl-carousel {
+                padding: 3% 0;
+            }
+             .owl-stage .owl-item img {
+                width: 300px;
+            }
+        
+            
+            a.read {
+                text-align: center;
+                
+                font-size: 1.6em;
+                color: rgb(75, 75, 75);
+                text-decoration: underline;
+            
+            }
+        } 
+         
+        
+
+}
+       
+        
+ 
+
+.social-icons {
+    background: rgb(226, 226, 226);
+
+    .paragraph {
+        text-align: center;
+        width: 50%;
+        padding: 5% 0;
+        margin: auto;
+        font-size: 2em;
+        color: initial;
+
+    }
+    .icons {
+        text-align: center;
+        
+        padding-bottom: 3%;
+
+        a {
+            padding-right: 2%;
+            font-size: 2em;
+            color: black;
+        }
+    }
+}
+
+footer {
+    background: rgb(54, 54, 54);
+
+    p {
+        text-align: center;
+        color: white;
+
+    }
+
+    p:first-child {
+        padding: 3% 0 3.5% 0;
+        width: 30%;
+        margin: auto;
+        font-size: 1em;
+    }
+    p:last-child {
+        padding: 0 0 2% 0;
+    }
+}
+    
+      
+    
